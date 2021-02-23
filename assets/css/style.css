@@ -617,19 +617,6 @@ hr {
 
 /* Form */
 
-._Forms_generate input[type=text], ._Forms_generate input[type=file], ._Forms_generate textarea, ._Forms_generate select, ._Forms_generate input[type=phone], ._Forms_generate input[type=email], ._Forms_generate input[type=date], ._Forms_generate input[type=time] {
-    background: #fff;
-    -webkit-border-radius: 0!important;
-    -moz-border-radius: 0!important;
-    border-radius: 0!important;
-    border: 1px solid #333!important;
-    padding: 13px 20px!important;
-    height: auto;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-}
-
 .form__name {
     font-size: 24px;
 }
