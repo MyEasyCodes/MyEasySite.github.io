@@ -553,6 +553,10 @@ hr {
     user-select: none;
   }
   
+    .prev:hover, .next:hover {
+      background-color:rgba(0, 0, 0, 0.3)
+  }
+
   /* Position the "next button" to the right */
   .next {
     right: 0;
@@ -1542,39 +1546,7 @@ hr {
         border-top: 3px solid #e5e5e5;
         font-size: 24px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
 
 @media screen and (max-width: 479px) {
     
@@ -1716,7 +1688,7 @@ hr {
 
     /* Next & previous buttons */
     .prev, .next {
-        top: 60%;
+        top: 70%;
     }
 
     /* Footer */
