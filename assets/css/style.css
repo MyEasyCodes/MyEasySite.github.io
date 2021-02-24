@@ -999,6 +999,10 @@ hr {
         font-size: 35px;
     }
 
+    .next, .prev {
+        top: 45%;
+    }
+    
     /* Footer */
     .footer {
         padding-top: 65px;
