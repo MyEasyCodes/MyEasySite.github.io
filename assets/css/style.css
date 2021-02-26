@@ -14,7 +14,7 @@ body {
 
 .anchor {
     text-decoration: none;
-    color: #fce38a;
+    color: #f38181;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +28,10 @@ hr {
     margin: 40px 0;
     border: 0;
     background-color: #e5e5e5;
+}
+
+p {
+    margin: 0;
 }
 
 /* Page */
@@ -93,7 +97,7 @@ hr {
 /* Header */
 .header {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -264,13 +268,17 @@ hr {
 
 /* Section */
 .section {
-    padding: 80px 0;
+    padding: 40px 0;
+}
+
+.section_about {
+    margin-top: 20px;
 }
 
 .section__header {
     width: 100%;
     max-width: 950px;
-    margin: 0 auto 50px;
+    margin: 0 auto 0;
     text-align: center;
 }
 
@@ -302,12 +310,9 @@ hr {
     color: #999;
 }
 
-
-
 /* Card */
-
 .card {
-    margin: 80px -15px 0;
+    margin: 0 -15px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -323,29 +328,6 @@ hr {
     position: relative;
     background-color: #95e1d3;
 }
-
-/* photo */
-.card__inner:hover .card__img__photo {
-    transform: translate3d(-5px, -5px, 0);
-}
-
-.card__inner:hover .card__img__photo img {
-    opacity: 0.1;
-}
-
-.card__img__photo {
-    background-image: linear-gradient(to right, #434343 0%, black 100%);
-    transition: transform 0.2s linear;
-}
-
-.card__img__photo img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    transition: opacity .1s linear;
-}
-/* photo закончилось */
-
 
 .card__inner:hover .card__img {
     transform: translate3d(-5px, -5px, 0);
@@ -387,43 +369,6 @@ hr {
     z-index: 2;
     transform: translate3d(0, -50%, 0);
     transition: opacity .2s linear;
-}
-
-.card__text {
-    width: 100%;
-    font-size: 18px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 2;
-    transform: translate3d(0, -50%, 0);
-    transition: opacity .2s linear;
-}
-
-.card__info {
-    margin-top: 20px;
-
-    text-align: center;
-}
-
-.card__name {
-    margin-bottom: 5px;
-
-    font-size: 14px;
-    color: #333;
-    text-transform: uppercase;
-}
-
-.card__prof {
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 300;
-    color: #999;
 }
 
 /* Statistics */
@@ -471,8 +416,8 @@ hr {
 .services__item {
     width: 33.33333%;
     position: relative;
-    margin-bottom: 40px;
-    padding: 0 35px 40px 85px;
+    margin-bottom: 30px;
+    padding: 0 30px 0 85px;
 }
 
 .services__icon {
@@ -494,149 +439,15 @@ hr {
     color: #999;
 }
 
-/* Social */
-.social {
-    display: flex;
-    justify-content: center;
-}
-
-.social__item {
-    width: 55px;
-    height: 55px;
-    padding: 12px 10px;
-    background-color: #434343;
-    border-right: 1px solid black;
-    font-size: 30px;
-    text-decoration: none;
-    color: #f38181;
-    line-height: 1;
-    border-radius: 25%;
-    transition: background .1s linear, color .1s linear;
-}
-
-.social__item:last-child {
-    border-right: 0;
-}
-
-.social__item:hover {
-    color: #fff;
-    background-color: #f38181;
-}
-
 /* Works */
-/* Works */
-/* Slideshow container */
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #f38181;
-    font-weight: bold;
-    font-size: 50px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-    .prev:hover, .next:hover {
-      background-color:rgba(0, 0, 0, 0.3)
-  }
 
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+.bottom {
+    margin-bottom: 50px;
+}
   
-  /* Caption text */
-  .text {
-    color: #333;
-    font-weight:bold;
-    font-size: 16px;
-    padding: 8px 12px;
-    position: relative;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #333;
-    font-weight:bold;
-    font-size: 16px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #717171;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .dot:hover, .active {
+ .active {
     background-color:rgba(0, 0, 0, 0)
   }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-/* Form */
-
-.form__name {
-    font-size: 24px;
-}
-
-.form__surname {
-    font-size: 24px;
-}
-
-.form__email {
-    font-size: 24px;
-}
-
-.form__submit {
-    font-size: 24px;
-}
-
 
 /* Footer */
 .footer {
@@ -720,14 +531,15 @@ hr {
 
     /* Header */
     .header__logo {
+        margin-left: 20px;
         font-size: 50px;
     }
 
-    /* Nav */
-    .nav {
-        font-size: 35px;
-    }
-
+     /* Nav */
+     .nav {
+        font-size: 30px;
+        margin-right: 20px;
+     }
     /* Button */
     .btn {
         padding: 10px 35px;
@@ -740,15 +552,20 @@ hr {
         max-width: 1800px;
     }
     
+    /* Section */
+    .section {
+        padding: 30px 0;
+    }
+
     .section__title:after {
         height: 5px;
         width: 100px;
-        margin-bottom: 80px;
-        margin-top: 80px;
+        margin-bottom: 40px;
+        margin-top: 40px;
     }
 
     .section__text {
-        font-size: 38px;
+        font-size: 36px;
     }
 
     .section__title {
@@ -760,6 +577,11 @@ hr {
     }
 
     /* Statistics */
+    .statistics {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
     .stat__item {
         padding: 60px 25px;
     }
@@ -795,6 +617,10 @@ hr {
     }
     
     /* Card */
+    .card {
+        margin-top: 80px;
+    }
+
     .social__item {
         width: 110px;
         height: 110px;
@@ -883,15 +709,22 @@ hr {
 
     /* Header */
     .header__logo {
-        font-size: 30px;
+        margin-left: 20px;
+        font-size: 26px;
     }
 
      /* Nav */
      .nav {
-        font-size: 20px;
+        font-size: 16px;
+        margin-right: 20px;
     }
 
     /* Stat */
+    .statistics {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
     .stat {
        justify-content: center;
     }
@@ -928,6 +761,10 @@ hr {
         font-size: 20px;
     }
 
+    .services__item {
+        margin: 0;
+    }
+
     .services__icon {
         left: 20px;
         top: 10px;
@@ -938,6 +775,10 @@ hr {
         padding: 20px 0;
     }
 
+    .section_about {
+        margin-top: 20px;
+    }
+
     .section__header {
         max-width: 1230px;
     }
@@ -945,7 +786,7 @@ hr {
     .section__title:after {
         height: 3px;
         width: 100px;
-        margin: 30px auto;
+        margin: 20px auto;
     }
 
     .section__text {
@@ -961,6 +802,10 @@ hr {
     }
 
     /* Card */
+    .card {
+        margin-top: 40px;
+    }
+
     .card__item {
         width: 30%;
     }
@@ -1169,6 +1014,7 @@ hr {
         font-size: 35px;
     }
 
+    
     /* Footer */
     .footer {
         padding-top: 65px;
@@ -1555,6 +1401,7 @@ hr {
 @media screen and (max-width: 479px) {
     
     /* Intro */
+    
     .intro__suptitle {
         font-size: 40px;
         margin-top: 60px;
@@ -1576,6 +1423,11 @@ hr {
     /* Header */
     .header {
         padding: 10px 0;
+    }
+
+    .header__logo {
+        margin: 0;
+        font-size: 20px;
     }
 
     /* Nav */
@@ -1602,10 +1454,13 @@ hr {
         display: block;
     }
 
+    .nav-toggle__item {
+        margin-bottom: 15px;
+    }
 
     /* Section */
     .section {
-        padding: 30px 0;
+        padding: 10px 0;
     }
 
     .section__header {
@@ -1614,7 +1469,7 @@ hr {
 
     .section__suptitle {
         font-size: 24px;
-        margin-bottom: 20px;
+        
     }
 
     .section__title {
@@ -1628,9 +1483,14 @@ hr {
     .section__text {
         font-size: 20px;
         float: left;
+        margin-bottom: 20px;
     }
 
     /* Stat */
+    .statistics {
+        margin-top: 30px;
+    }
+
     .stat__item {
         width: 100%;
         border-bottom: 1px solid #b5eae0;
@@ -1648,6 +1508,7 @@ hr {
     .card__item {
         width: 100%;
         margin-bottom: 30px;;
+        margin-top: 20px;
     }
 
     .card__item:last-child {
@@ -1669,6 +1530,7 @@ hr {
         max-width: 400px;
         padding-left: 55px;
         padding-right: 0;
+        padding-bottom: 10px;
     }
 
     .services__icon {
