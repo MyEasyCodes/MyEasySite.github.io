@@ -1612,8 +1612,9 @@ p {
     }
 
     .services__icon {
-        left: 5px;
-        top: -2px;
+        padding-left: 8px;
+        padding-top: 4px;
+        padding-right: 8px;
     }
 
     .services__text {
