@@ -258,6 +258,7 @@ p {
     width: 100%;
     color: #fff;
     overflow: hidden;
+    font-size: 18px;
   }
   .tab input {
     position: absolute;
@@ -272,7 +273,7 @@ p {
     font-weight: bold;
     line-height: 3;
     cursor: pointer;
-    text-align: center;
+    text-align: left;
     color: #333;
   }
   .blue label {
@@ -286,17 +287,18 @@ p {
     -webkit-transition: max-height .35s;
     -o-transition: max-height .35s;
     transition: max-height .35s;
-    color: rgb(153, 153, 153);
+    color: #333
   }
   .blue .tab-content {
     background: #3498db;
   }
   .tab-content p {
     margin: 1em;
+    font-size: 28px;
   }
   /* :checked */
   .tab input:checked ~ .tab-content {
-    max-height: 100vh;
+    max-height: 100%;
   }
   
   /* Icon */
@@ -325,6 +327,10 @@ p {
   .tab input[type=radio]:checked + label::after {
     transform: rotateX(180deg);
   }
+
+.exams_img_1 {
+    float: right;
+}
 /* Button */
 .btn {
     display: inline-block;
@@ -385,7 +391,7 @@ p {
 
 .section__text {
     font-size: 15px;
-    color: #999;
+    color: #333;
 }
 
 /* Card */
@@ -646,6 +652,10 @@ p {
         font-size: 36px;
     }
 
+    .tab-content p {
+        font-size: 36px;
+    }
+
     .section__title {
         font-size: 75px;
     }
@@ -871,6 +881,10 @@ p {
         font-size: 24px;
     }
 
+    .tab-content p {
+        font-size: 24px;
+    }
+
     .section__title {
         font-size: 45px;
     }
@@ -1045,6 +1059,10 @@ p {
         font-size: 28px;
     }
 
+    .tab-content p {
+        font-size: 28px;
+    }
+
     .section__title {
         font-size: 55px;
     }
@@ -1207,6 +1225,10 @@ p {
     }
 
     .section__text {
+        font-size: 26px;
+    }
+
+    .tab-content p {
         font-size: 26px;
     }
 
@@ -1407,6 +1429,10 @@ p {
     }
 
     .section__text {
+        font-size: 26px;
+    }
+
+    .tab-content p {
         font-size: 26px;
     }
 
@@ -1612,9 +1638,8 @@ p {
     }
 
     .services__icon {
-        padding-left: 8px;
-        padding-top: 4px;
-        padding-right: 8px;
+        left: 5px;
+        top: -2px;
     }
 
     .services__text {
@@ -1648,4 +1673,18 @@ p {
     font-size: 15px;
     }
 
+    .tab-content p {
+        font-size: 20px;
+        float: left;
+    }
+
+    .exams_img {
+        overflow: scroll;
+        width: 100%;
+        height: 100%;
+    }
+
+    .exams_img_1 {
+        float: none;
+    }
 }
