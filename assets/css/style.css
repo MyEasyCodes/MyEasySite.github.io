@@ -1691,4 +1691,10 @@ p {
     .exams_img_1 {
         float: none;
     }
+
+    .tab label::after {
+       display: none;
+    }
+
 }
+
