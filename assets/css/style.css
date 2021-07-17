@@ -48,8 +48,6 @@ p {
     margin: 0 auto;
 }
 
-
-
 /* Intro */
 .intro {
     display: flex;
@@ -131,7 +129,6 @@ p {
     font-weight: 700;
     color: #fff;
 }
-
 
 /* Nav */
 .nav {
@@ -246,11 +243,7 @@ p {
     transform: rotate(-45deg) translate3d(0px, 3px, 0);
 }
 
-/* Exams */
-.exams_img_wrapper {
-    width: 100%;
-}
-
+/* works */
 .half {
     width: 100%;
     padding: 0 10px;
@@ -293,9 +286,7 @@ p {
     transition: max-height .35s;
     color: #333
   }
-  .blue .tab-content {
-    background: #3498db;
-  }
+
   .tab-content p {
     margin: 1em;
     font-size: 28px;
@@ -332,9 +323,6 @@ p {
     transform: rotateX(180deg);
   }
 
-.exams_img_1 {
-    float: right;
-}
 /* Button */
 .btn {
     display: inline-block;
@@ -524,7 +512,7 @@ p {
 
 .services__text {
     font-size: 15px;
-    color: #999;
+    color: rgb(94, 87, 80);
 }
 
 /* Works */
@@ -577,9 +565,6 @@ p {
     color: #333;
     text-align: center;
 }
-
-
-
 
 
 @media (max-width: 1920px) and (max-height: 1080px) {
